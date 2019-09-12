@@ -8,7 +8,7 @@ let conta = {}
 const senha = '44112841vi';
 
 //Função usando o FileSystem para obter o JSON
-fs.readFile('./output1.json', function read(err, data) {
+fs.readFile('./JSON/output1.json', function read(err, data) {
     //Tratamento de Erro
     if (err) {
         throw err;
