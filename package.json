@@ -1,0 +1,19 @@
+{
+  "name": "descubraomundo",
+  "version": "0.0.1",
+  "description": "Projeto Marilia",
+  "main": "json.js",
+  "dependencies": {
+    "nodemailer": "^6.3.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "nodemon": "^1.19.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon "
+  },
+  "author": "HureWare-Company",
+  "license": "ISC"
+}
