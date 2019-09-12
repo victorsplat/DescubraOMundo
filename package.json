@@ -2,7 +2,7 @@
   "name": "descubraomundo",
   "version": "0.0.1",
   "description": "Projeto Marilia",
-  "main": "json.js",
+  "main": "email.js",
   "dependencies": {
     "nodemailer": "^6.3.0"
   },
@@ -15,5 +15,13 @@
     "start": "nodemon "
   },
   "author": "HureWare-Company",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorsplat/DescubraOMundo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorsplat/DescubraOMundo/issues"
+  },
+  "homepage": "https://github.com/victorsplat/DescubraOMundo#readme"
 }
