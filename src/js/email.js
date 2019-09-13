@@ -1,37 +1,14 @@
 //Imports
 const nodemailer = require('nodemailer')
-const fs = require('fs')
-
-var conteudo
 //Objeto que vai receber o email e a senha
-let conta = {}
-const senha = '44112841vi';
-
-//Função usando o FileSystem para obter o JSON
-fs.readFile('./JSON/output1.json', function read(err, data) {
-    //Tratamento de Erro
-    if (err) {
-        throw err;
-    }
-    this.content = data;
-
-    console.log('Json Sendo Parseado')
-
-    //Transformar os dados obtidos em um JSON
-    conteudo = JSON.parse(content)
-
-    conta.email = conteudo.email
-
-    console.log(conta)
-    Enviar()
-});
-
+let conta = {email:"victorprado123@gmail.com", senha:"44112841vi"}
+const contaAlvo = {id:1,nome:"Victor",idade:18,sexo:"M",email:"victorprado123@gmail.com"}
 //Funcao a ser ativada depois que o email é obtido
 let Enviar = () => {
 
-const email = {
+let email = {
     user: conta.email,
-    pass: senha
+    pass: conta.senha
 }
 //criacao do transportador
 
@@ -45,11 +22,11 @@ let transporter = nodemailer.createTransport({
 });
 
 //opções do email
-const mailOptions = {
+let mailOptions = {
     from: 'victorprado123@gmail.user', // sender address
-    to: 'victorsplat@hotmail.com', // list of receivers
-    subject: 'Subject of your email', // Subject line
-    html: `<h1>${conteudo}</h1>`
+    to: `${contaAlvo.email}`, // list of receivers
+    subject: `ID:${contaAlvo.id}, ${contaAlvo.nome}`, // Subject line
+    html: `<h1>ID:${contaAlvo.id}, ${contaAlvo.nome}</h1> <p>${JSON.stringify(contaAlvo)}</p>`
 };
 //envio de fato
  transporter.sendMail(mailOptions, function (err, info) {
@@ -59,3 +36,4 @@ const mailOptions = {
       console.log(info);
  });
 }
+Enviar();
