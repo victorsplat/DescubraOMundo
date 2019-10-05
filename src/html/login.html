@@ -17,12 +17,12 @@
 <body>
     <div class="login">
         <div logo><img logo src="../img/globe_PNG62.png" alt="" class="logo"></div>
-        <form class="dadosCliente" method="POST" action="./#">
+        <form class="dadosCliente" method="POST" action="http://localhost:3003/usuarios" id="loginForm">
             <input class="form-control" dados type="email" placeholder="Ex: Nelson@Mandela.com" name="emailUser" id="emailUser">
             <input class="form-control" dados type="password" placeholder="********" name="passUser" id="passUser">
-            <button btn type="button" class="btn btn-primary">Login</button>
         </form>
-        <a class="forget" href="#"">Esqueceu a senha?</a>
+        <button btn type="submit" form="loginForm" class="btn btn-primary">Login</button>
+        <a class="forget" href="#">Esqueceu a senha?</a>
         <button btn register type=" button" class="btn btn-outline-primary"  onclick="location.href='./register.html'">Ainda não tem uma conta?</button>
     </div>
     <!-- Optional JavaScript -->

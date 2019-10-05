@@ -17,7 +17,7 @@
 <body>
     <div class="login">
         <div logo><img logo src="../img/globe_PNG62.png" alt="" class="logo"></div>
-        <form class="dadosCliente" method="POST" action="./#">
+        <form class="dadosCliente" method="POST" action="http://localhost:3003/registro" id="registerForm">
             <input class="form-control" dados type="text" placeholder="Digite seu Nome" name="nameUser" id="nameUser">
             <input class="form-control" dados type="text" placeholder="Digite seu Sobrenome" name="lastNameUser"
                 id="lastNameUser">
@@ -31,8 +31,8 @@
                 name="passrepeatUser" id="passrepeatUser">
             <input termos type="checkbox" name="condicoes" id="condicoes"><small>Eu aceito os Termos, Política de Dados
                 e Política de Cookies</small>
-            <button btn type="button" class="btn btn-primary">Cadastre-se</button>
         </form>
+        <button btn type="submit" class="btn btn-primary" form="registerForm">Cadastre-se</button>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
