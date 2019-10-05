@@ -1,3 +1,23 @@
-.barraInicial{
-    background: rgb(209, 137, 29)
+body{
+    margin: 0;
+}
+.headerSocial{
+    background: #ffb342;
+    height: 45px;
+}
+.logo{
+    width: 3%;
+}
+.main-menu{
+    background: #2255bbEE;
+    width: 100%;
+}
+[bt]{
+    color: white;
+    margin-left: auto;
+}
+.social{
+    text-align: right;
+    float: right;
+    height: 45px;
 }
