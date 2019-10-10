@@ -4,13 +4,11 @@ body{
 .headerSocial{
     background: #ffb342;
     height: 45px;
+    box-shadow: 10px rgb(41, 40, 40);
 }
-.logo{
-    width: 3%;
-}
-.main-menu{
-    background: #2255bbEE;
-    width: 100%;
+.homeMenu{
+    background-color: #3366cc;
+    font-size: 17pt;
 }
 [bt]{
     color: white;
@@ -19,5 +17,19 @@ body{
 .social{
     text-align: right;
     float: right;
-    height: 45px;
+    margin-top: 5px;
+    font-size: 25pt;
+    margin-right: 12PX;
+    color: rgb(93, 93, 196)
+}
+.social:hover{
+    cursor: pointer;
+}
+.bg-img{
+    background-image: url(../img/city-bg-red.png);
+    min-height: 180px;
+    margin-top: 5px;
+}
+.navbar{
+    text-align: right;
 }
