@@ -11,23 +11,23 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="/src/css/form.css">
 </head>
 
 <body>
-    <div class="login container">
-        <div logo><img logo src="../img/globe_PNG62.png" alt="" class="logo"></div>
+    <div class="login">
+        <div logo><img logo src="../img/form-logo.png" alt="" class="logo"></div>
         <form class="dadosCliente" method="POST" action="http://localhost:3003/registro" id="registerForm">
-            <input class="form-control" dados type="text" placeholder="Digite seu Nome" name="nameUser" id="nameUser">
-            <input class="form-control" dados type="text" placeholder="Digite seu Sobrenome" name="lastNameUser"
+            <input class="form-control" required dados type="text" placeholder="Digite seu Nome" name="nameUser" id="nameUser">
+            <input class="form-control" required dados type="text" placeholder="Digite seu Sobrenome" name="lastNameUser"
                 id="lastNameUser">
-            <input class="form-control" dados type="email" placeholder="Digite seu Email" name="emailUser"
+            <input class="form-control" required dados type="email" placeholder="Digite seu Email" name="emailUser"
                 id="emailUser">
-            <input class="form-control" dados type="email" placeholder="Digite seu Email novamente"
+            <input class="form-control" required dados type="email" placeholder="Digite seu Email novamente"
                 name="emailrepeatUser" id="emailrepeatUser">
-            <input class="form-control" dados type="password" placeholder="Digite sua senha" name="passUser"
+            <input class="form-control" required dados type="password" placeholder="Digite sua senha" name="passUser"
                 id="passUser">
-            <input class="form-control" dados type="password" placeholder="Digite sua senha novamente"
+            <input class="form-control" required dados type="password" placeholder="Digite sua senha novamente"
                 name="passrepeatUser" id="passrepeatUser">
             <input termos type="checkbox" name="condicoes" id="condicoes"><small>Eu aceito os Termos, Política de Dados
                 e Política de Cookies</small>

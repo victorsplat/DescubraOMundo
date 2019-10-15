@@ -28,11 +28,17 @@ body{
 }
 .bg-img{
     background-image: url(../img/city-bg-red.png);
-    min-height: 210px;
+    min-height: 180px;
     margin-top: 5px;
 }
 .navbar{
     text-align: right;
 }
 .collapse { margin: 0 auto }
-.navbar-nav { display: flex; justify-content: center }
+.navbar-nav { margin-left: auto;}
+[profile]{
+    margin: 4px 4px;
+}
+.profileArea{
+    float: right;
+}

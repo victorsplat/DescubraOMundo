@@ -11,11 +11,16 @@
   <script src="https://kit.fontawesome.com/6dbb6f942f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="/src/css/index.css">
+  <link rel="stylesheet" href="/src/css/homeContainer.css">
 </head>
 
 <body>
-  <div class="headerSocial"><i class="fab fa-instagram social"></i> <i class="fab fa-facebook social"></i> </div>
+  <div class="headerSocial">
+    <div class="profileArea"><button profile type="button" onclick="location.href='/src/html/login.html'" class="btn btn-outline-primary">Login</button><button profile
+        type="button" onclick="location.href='/src/html/register.html'" class="btn btn-outline-primary">Register</button></div><i class="fab fa-instagram social"></i> <i
+      class="fab fa-facebook social"></i>
+  </div>
   <div class="bg-img">
     <div class="homeMenu">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -30,16 +35,16 @@
               <a link class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a link class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Cursos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#"></a>
-                  <a class="dropdown-item" href="#"></a>
-                  <a class="dropdown-item" href="#"></a>
-                </div>
-              </li>
+              <a link class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cursos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#"></a>
+                <a class="dropdown-item" href="#"></a>
+                <a class="dropdown-item" href="#"></a>
+              </div>
+            </li>
             <li class="nav-item">
               <a link class="nav-link" href="#">Teste seu Nível!</a>
             </li>
@@ -47,13 +52,22 @@
               <a link class="nav-link" href="#">Contato</a>
             </li>
             <li class="nav-item">
-                <a link class="nav-link" href="#">Sobre</a>
-              </li>
+              <a link class="nav-link" href="#">Sobre</a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
   </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="col-sm-8">
+        <h1 class="display-4">Quer começar a estudar inglês?</h1>
+        <p class="lead">Mas não faz ideia de por onde começar?</p>
+      </div>
+      <div class="col-md-4"><button type="button" class="btn btn-primary"><i class="fa fa-arrow-right" aria-hidden="true"></i> Teste seu Nível!</button></div>
+
+    </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -11,15 +11,15 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="/src/css/form.css">
 </head>
 
 <body>
     <div class="login">
-        <div logo><img logo src="../img/globe_PNG62.png" alt="" class="logo"></div>
+        <div logo><img logo src="../img/form-logo.png" alt="" class="logo"></div>
         <form class="dadosCliente" method="POST" action="http://localhost:3003/usuarios" id="loginForm">
-            <input class="form-control" dados type="email" placeholder="Ex: Nelson@Mandela.com" name="emailUser" id="emailUser">
-            <input class="form-control" dados type="password" placeholder="********" name="passUser" id="passUser">
+            <input class="form-control" required dados type="email" placeholder="Ex: Nelson@Mandela.com" name="emailUser" id="emailUser">
+            <input class="form-control" required dados type="password" placeholder="********" name="passUser" id="passUser">
         </form>
         <button btn type="submit" form="loginForm" class="btn btn-primary">Login</button>
         <a class="forget" href="#">Esqueceu a senha?</a>

@@ -20,8 +20,6 @@
     margin: 10px auto 5px auto;
     width: 25%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 .login{
     margin-top: 7%;
@@ -36,7 +34,4 @@
 }
 [termos]{
     margin-right: 3px;
-}
-.container{
-    border: rgb(155, 58, 2);
 }
