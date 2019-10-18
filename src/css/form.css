@@ -1,14 +1,39 @@
+.forget{
+    text-align: inherit;
+}
 [dados]{
     text-align: left;
     margin-left: auto; margin-right: auto;
     display: block;
+    margin-bottom: 15px;
     width: 30%;
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    0px 0px 2px 0px rgb(109, 109, 109);
+    -webkit-box-shadow: 0px 0px 2px 0px rgb(109, 109, 109);
+    box-shadow:         0px 0px 2px 0px rgb(109, 109, 109);
 }
-
+[logo]{
+    text-align: center;
+    margin-bottom: 13px;
+}
 [btn] {
     display: block;
-    margin: 10px auto 10px auto;
+    margin: 10px auto 5px auto;
+    width: 25%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login{
+    margin-top: 7%;
+    margin: 0px 15%;
+    padding-top: 30px;
+    border-radius: 15px;
+    margin: 15px rgb(104, 65, 65);
+    text-align: center;
+}
+[register]{
+    width: 20%;
+}
+[termos]{
+    margin-right: 3px;
 }
