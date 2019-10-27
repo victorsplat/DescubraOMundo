@@ -1,17 +1,7 @@
-'user strict';
+const Sequelize = require('sequelize')
+const sequelize = new Sequelize('test', 'root', '', {
+    host: 'localhost',
+    dialect: 'mysql'
+})
 
-const mysql = require('mysql');
-
-//local mysql db connection
-var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : '',
-    database : 'descubratheworld'
-});
-
-connection.connect(function(err) {
-    if (err) throw err;
-});
-
-module.exports = connection
+module.exports = sequelize

@@ -1,9 +1,10 @@
-.principal{
+.principal {
     background: rgb(206, 208, 209);
 }
+
 .jumbotron {
-    background-image: url("/src/img/ballpen-blur-close-up-1925536.jpg");
+    background-image: url("../img/ballpen-blur-close-up-1925536.jpg");
     background-size: cover;
     background-position: center center;
-    color: white; 
-  }
+    color: white;
+}
