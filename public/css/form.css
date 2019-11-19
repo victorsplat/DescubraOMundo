@@ -1,51 +1,55 @@
-body {
-    background-image: url(../img/city-dark-dawn-248159\ \(2\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.forget {
-    text-align: inherit;
-}
-
-[dados] {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 15px;
-    width: 60%;
-    -moz-box-shadow: 0px 0px 2px 0px rgb(109, 109, 109);
-    -webkit-box-shadow: 0px 0px 2px 0px rgb(109, 109, 109);
-    box-shadow: 0px 0px 2px 0px rgb(109, 109, 109);
-}
-
-[logo] {
-    text-align: center;
-    margin-bottom: 13px;
-}
-
-[btn] {
-    display: block;
-    margin: 10px auto 5px auto;
-    width: 35%;
-    text-align: center;
-}
-
-.login {
-    margin: 100px 30%;
-    background: white;
-    padding: 90px 0;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 4px 4px 6px 1px #504f4f;
-}
-
-[register] {
-    width: 25%;
-}
-
-[termos] {
-    margin-right: 3px;
-}
+        body {
+            background-image: url(../img/city-dark-dawn-248159\ \(2\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .forget {
+            text-align: inherit;
+        }
+        
+        [logo] {
+            text-align: center;
+            margin-bottom: 13px;
+        }
+        
+        [btn] {
+            display: block;
+            margin: 10px auto 5px auto;
+            width: 35%;
+            text-align: center;
+        }
+        
+        .login {
+            margin: 40px 28%;
+            background: white;
+            padding: 60px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 4px 4px 6px 1px #504f4f;
+        }
+        
+        [register] {
+            width: 25%;
+        }
+        
+        [termos] {
+            margin-right: 3px;
+        }
+        
+        [buttons] {
+            display: block;
+        }
+        
+        [dados] {
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 15px;
+            width: 40%;
+            -moz-box-shadow: 0px 0px 2px 0px rgb(109, 109, 109);
+            -webkit-box-shadow: 0px 0px 2px 0px rgb(109, 109, 109);
+            box-shadow: 0px 0px 2px 0px rgb(109, 109, 109);
+        }

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/homeContainer.css">
+<div class="login">
+    <div logo><img logo src="../img/form-logo.png" alt="" class="logo"></div>
+    <form class="dadosCliente" method="POST" action="/createUser" id="registerForm">
+        <input class="form-control" required dados type="text" placeholder="Digite seu Nome" name="userName"
+            id="userName">
+        <input class="form-control" required dados type="text" placeholder="Digite seu Sobrenome" name="lastUserName"
+            id="lastUserName">
+        <input class="form-control" required dados type="number" placeholder="Digite sua Idade" min="12" max="99"
+            name="userAge" id="userAge">
+        <input class="form-control" required dados type="email" placeholder="Digite seu Email" name="emailUser"
+            id="emailUser">
+        <input class="form-control" required dados type="email" placeholder="Digite seu Email novamente"
+            name="emailrepeatUser" id="emailrepeatUser">
+        <input class="form-control" required dados type="password" placeholder="Digite sua senha" name="passUser"
+            id="passUser">
+        <input class="form-control" required dados type="password" placeholder="Digite sua senha novamente"
+            name="passrepeatUser" id="passrepeatUser">
+        <input termos type="checkbox" name="condicoes" id="condicoes"><small>Eu aceito os Termos, Política de Dados
+            e Política de Cookies</small>
+    </form>
+    <button btn type="submit" class="btn btn-primary" form="registerForm">Cadastre-se</button>
+</div>

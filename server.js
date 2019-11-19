@@ -2,36 +2,43 @@
 const express = require('express')
 const bp = require('body-parser')
 const routes = require('./node-api/src/routes.js')
+const handlebars = require('express-handlebars')
+const port = 3003
+const db = require('./node-api/src/models/db')
 
-//Sequelize config
-const Sequelize = require('sequelize')
-const sequelize = new Sequelize('test', 'root', '', {
-    host: 'localhost',
-    dialect: 'mysql'
-})
+//Config
 
 //Inicializando App
 
 const app = express()
 
 //Sequelize Initiate
-sequelize.authenticate().then(() => (console.log('Sucesso ao se conectar ao banco de dados!'))).catch(
+
+db.sequelize.authenticate().then(() => (console.log('Sucesso ao se conectar ao banco de dados!'))).catch(
     (erro) => console.log(`Erro ao se conectar ao banco de dados! ${erro}`)
 )
 
 //Load Static Files
+
 app.use(express.static('public'))
 
 //urelencoded
+
 app.use(bp.urlencoded({
     extended: true,
 }))
 
-//Conectando ao Banco de Dados
+//Config Handlebars
 
+app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
+app.set('view engine', 'handlebars')
 
 //Import das rotas
 
 app.use(routes)
 
-app.listen(3003)
+//ServerStart & Port Listening
+
+app.listen(port, () => {
+    console.log(`Servidor iniciado na porta ${port}`)
+})

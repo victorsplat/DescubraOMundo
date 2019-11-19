@@ -1,20 +1,39 @@
-const express = require('express')
+const express = require("express");
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.sendFile(__dirname + '/html/index.html');
-})
-router.get('/login', (req, res) => {
-    console.log(req.body)
-    res.sendFile(__dirname + '/html/login.html');
-})
-router.get('/register', (req, res) => {
-    console.log(req.body)
-    res.sendFile(__dirname + '/html/register.html');
-})
-router.post('/success', (req, res) => {
-    const createUser = require('./controllers/RegisterController')
-    createUser(req.body.emailUser, req.body.passUser, req.body.userAge, req.body.userName)
-    res.sendFile(__dirname + '/html/index.html')
-})
-module.exports = router
+router.get("/", (req, res) => {
+    res.render("home");
+});
+router.get("/contato", (req, res) => {
+    res.render("contato");
+});
+router.get("/sobre", (req, res) => {
+    res.render("sobre");
+});
+router.get("/login", (req, res) => {
+    console.log(req.body);
+    res.render("login");
+});
+router.get("/register", (req, res) => {
+    console.log(req.body);
+    res.render("register");
+});
+router.post("/createUser", (req, res) => {
+    const createUser = require("./controllers/AccountController");
+    console.log("ok")
+    const statusCriacao = createUser(
+        req.body.emailUser,
+        req.body.passUser,
+        req.body.userAge,
+        req.body.userName
+    )
+    if (statusCriacao == "Sucesso") {
+        res.redirect('/')
+        console.log("")
+    } else if (statusCriacao == "Falha") {
+        console.log("Erro!")
+    } else {
+        console.log("Erro desconhecido!")
+    }
+});
+module.exports = router;
